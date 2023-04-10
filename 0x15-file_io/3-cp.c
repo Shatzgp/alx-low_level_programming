@@ -35,7 +35,6 @@ int main(int argc, char *argv[])
 	while (n_read == 1024)
 	{
 	n_read = read(src_fd, buffer, sizeof(buffer));
-		if else(n_read == -1)
 
 	check_IO_stat(-1, -1, argv[1], 'O');
 	wrote = write(dest_fd, buffer, n_read);
