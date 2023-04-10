@@ -4,10 +4,10 @@
 /**
  * binary_to_uint - convert a binary num to an unsigned int
  * @b: char string
+ *
  * return: the converted number
  * description: converted decimal number
  */
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int total, power;
@@ -24,14 +24,8 @@ unsigned int binary_to_uint(const char *b)
 		}
 		len++;
 	}
-	for (len--; len >= 0; len--)
 	{
-		if (b[len] == '1')
-		{
-			total += power;
-		}
-		power *= 2;
+		total += power;
+		return (total);
 	}
-
-	return (total);
 }
