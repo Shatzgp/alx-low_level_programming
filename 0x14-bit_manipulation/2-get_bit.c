@@ -5,7 +5,7 @@
  * @n: number to find
  * @index: index of a bit
  *
- * return: value of a bit
+ * Return: if error occures -1 otherwise the value of bit at index.
  */
 
 int get_bit(unsigned long int n, unsigned int index)
